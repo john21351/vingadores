@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vingadores</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 class="titulo">Os Vingadores</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#filmes">Filmes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="carrossel-container">
+        <button class="prev" onclick="mudarSlide(-1)">&#10094;</button>
+        <div class="carrossel">
+            <div class="slides">
+                <div class="slide"><img src="./fotos/vingadores__hero.webp" alt="Vingadores reunidos"></div>
+                <div class="slide"><img src="./fotos/vingadores__hero__primeirafoto.webp" alt="Vingadores em ação"></div>
+                <div class="slide"><img src="./fotos/vingadores__quadrinhos.jpg" alt="Vingadores nos quadrinhos"></div>
+            </div>
+        </div>
+        <button class="next" onclick="mudarSlide(1)">&#10095;</button>
+    </section>
+
+    <section class="sobre">
+        <h2>Sobre os Vingadores</h2>
+        <p>Os Vingadores são a equipe de super-heróis mais poderosa da Terra, reunindo os maiores heróis da Marvel Comics para combater ameaças que nenhum deles poderia enfrentar sozinho. Desde sua criação nos quadrinhos, eles se tornaram um fenômeno global, com filmes que quebraram recordes de bilheteria e conquistaram fãs em todo o mundo.</p>
+    </section>
+
+    <section id="filmes" class="filmes-container">
+        <h2>Filmes dos Vingadores</h2>
+        <div class="filmes">
+            <div class="filme">
+                <img src="./fotos/filmes/primeiro filme.jpg" alt="Os Vingadores">
+                <h3>Os Vingadores (2012)</h3>
+                <p>O filme que reuniu pela primeira vez os heróis mais icônicos da Marvel, como Homem de Ferro, Capitão América, Thor e Hulk, para enfrentar o vilão Loki e seu exército alienígena.</p>
+            </div>
+            <div class="filme">
+                <img src="./fotos/filmes/segundo filme.jpg" alt="Vingadores: Era de Ultron">
+                <h3>Vingadores: Era de Ultron (2015)</h3>
+                <p>Os Vingadores enfrentam Ultron, uma inteligência artificial que ameaça a humanidade, enquanto lidam com conflitos internos e novos aliados, como Wanda Maximoff e Visão.</p>
+            </div>
+            <div class="filme">
+                <img src="./fotos/filmes/terceiro filme.jpg" alt="Vingadores: Guerra Infinita">
+                <h3>Vingadores: Guerra Infinita (2018)</h3>
+                <p>Thanos, o titã louco, busca as Joias do Infinito para destruir metade do universo. Os Vingadores devem se unir como nunca para impedi-lo.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Marvel Studios. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

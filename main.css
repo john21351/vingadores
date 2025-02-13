@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Archivo Black', 'Roboto', sans-serif;
+}
+
+body {
+    text-align: center;
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.titulo {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ff0000;
+    margin-bottom: 1rem;
+    text-align: center;
+    pointer-events: none;
+    user-select: none;
+}
+
+/* Menu */
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    background-color: #333;
+    margin-bottom: 20px;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background-color: #ff0000;
+    border-radius: 5px;
+}
+
+/* Carrossel */
+.carrossel-container {
+    position: relative;
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.carrossel {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Botões do carrossel */
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+/* Seção Sobre */
+.sobre {
+    padding: 40px 20px;
+    background-color: #2c2c2c;
+    margin: 20px 0;
+}
+
+.sobre h2 {
+    font-size: 2.5rem;
+    color: #ff0000;
+    margin-bottom: 20px;
+}
+
+.sobre p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Seção Filmes */
+.filmes-container {
+    padding: 40px 20px;
+    background-color: #1e1e1e;
+}
+
+.filmes-container h2 {
+    font-size: 2.5rem;
+    color: #ff0000;
+    margin-bottom: 20px;
+}
+
+.filmes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.filme {
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.filme:hover {
+    transform: scale(1.05);
+}
+
+.filme img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.filme h3 {
+    font-size: 1.5rem;
+    color: #ff0000;
+    margin: 15px 0;
+}
+
+.filme p {
+    font-size: 1rem;
+    padding: 0 15px 20px;
+    color: #ccc;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1rem;
+    color: #ffffff;
+}
